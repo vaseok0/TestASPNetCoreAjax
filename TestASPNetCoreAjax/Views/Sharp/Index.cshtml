@@ -1,0 +1,32 @@
+﻿@using TestASPNetCoreAjax.Models.Data
+@model IQueryable<Sharp>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/StyleHomeIndex.css" />
+</head>
+
+<div>
+    <div class="link_language">
+        <div class="container_language">
+            <div class="img_language">
+                <a asp-action="Sharp" asp-controller="Sharp">
+                    <img src="https://cdn.proghub.ru/t/cs-basic.png" alt="img">
+                </a>
+            </div>
+            <div class="info_container">
+                <div class="title_container">
+                    <a asp-action="Sharp" asp-controller="Sharp">
+                        <h2>C#: Начинающий</h2>
+                    </a>
+                </div>
+                <div class="info">
+                    <p>Сборка вопросов по синтаксису.</p>
+                    <p>Подойдет для совсем начинающих *програмистов*.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

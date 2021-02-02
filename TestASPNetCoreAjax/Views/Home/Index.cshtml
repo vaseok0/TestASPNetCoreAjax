@@ -1,0 +1,33 @@
+﻿@using TestASPNetCoreAjax.Models.Data
+@model IQueryable<Sharp>
+@{
+    ViewData["Title"] = "Список язиков програмирования";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/StyleHomeIndex.css" />
+</head>
+
+<div>
+    <div class="link_language">
+        <div class="container_language">
+            <div class="img_language">
+                <a asp-action="Index" asp-controller="Sharp">
+                    <img src="https://cdn.proghub.ru/t/cs-basic.png" alt="img">
+                </a>
+            </div>
+            <div class="info_container">
+                <div class="title_container">
+                    <a asp-action="Index" asp-controller="Sharp">
+                        <h2>C#</h2>
+                    </a>
+                </div>
+                <div class="info">
+                    <p>Сборка тестов по языку C#.</p>
+                    <p>Все доступние тести в сети. + Кастомние авторские тести</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
